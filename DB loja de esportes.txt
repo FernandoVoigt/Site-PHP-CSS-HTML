@@ -1,0 +1,219 @@
+create database loja;
+
+use loja;
+
+create table training(
+cod int AUTO_INCREMENT,
+modelo varchar(60) NOT NULL,
+marca varchar(20) NOT NULL,
+classe varchar(20) NOT NULL,
+imagem varchar(100) NOT NULL,
+cor1 varchar(20),
+cor2 varchar(20),
+cor3 varchar(20),
+descricao varchar (500),
+preco varchar(10) NOT NULL,
+PRIMARY KEY (cod)
+);
+
+create table artes_marciais(
+cod int AUTO_INCREMENT,
+modelo varchar(60) NOT NULL,
+marca varchar(20) NOT NULL,
+classe varchar(20) NOT NULL,
+imagem varchar(100) NOT NULL,
+cor1 varchar(20),
+cor2 varchar(20),
+cor3 varchar(20),
+descricao varchar (500),
+preco varchar(10) NOT NULL,
+PRIMARY KEY (cod)
+); 
+
+create table aventura(
+cod int AUTO_INCREMENT,
+modelo varchar(60) NOT NULL,
+marca varchar(20) NOT NULL,
+classe varchar(20) NOT NULL,
+imagem varchar(100) NOT NULL,
+cor1 varchar(20),
+cor2 varchar(20),
+cor3 varchar(20),
+descricao varchar (500),
+preco varchar(10) NOT NULL,
+PRIMARY KEY (cod)
+);
+  
+create table praia(
+cod int AUTO_INCREMENT,
+modelo varchar(60) NOT NULL,
+marca varchar(20) NOT NULL,
+classe varchar(20) NOT NULL,
+imagem varchar(100) NOT NULL,
+cor1 varchar(20),
+cor2 varchar(20),
+cor3 varchar(20),
+descricao varchar (500),
+preco varchar(10) NOT NULL,
+PRIMARY KEY (cod)
+);
+
+create table marca(
+cod int AUTO_INCREMENT,
+nome varchar(50) NOT NULL,	
+PRIMARY KEY (cod)
+);
+
+
+
+create table mensagens(
+cod int AUTO_INCREMENT,
+nomerem varchar(50) NOT NULL,
+email varchar(30) NOT NULL,
+assunto varchar(20) NOT NULL,
+coment varchar(500) NOT NULL,
+PRIMARY KEY (cod)
+);
+
+insert into marca values(null,'Adidas');
+insert into marca values(null,'Nike');
+insert into marca values(null,'Umbro');
+insert into marca values(null,'Randall');
+insert into marca values(null,'Penalty');
+insert into marca values(null,'Olympikus');
+insert into marca values(null,'Puma');
+insert into marca values(null,'Mormaii');
+insert into marca values(null,'Reebok');
+insert into marca values(null,'Vans');
+insert into marca values(null,'Kappa');
+insert into marca values(null,'MLBAM');
+insert into marca values(null,'Under Armour');
+insert into marca values(null,'Speedo');
+insert into marca values(null,'Wilson');
+insert into marca values(null,'kicos');
+insert into marca values(null,'MKS');
+insert into marca values(null,'REKAR');
+insert into marca values(null,'MOMENTUM AL');
+insert into marca values(null,'Cairo');
+insert into marca values(null,'Aqua Sphere');
+insert into marca values(null,'Emery');
+insert into marca values(null,'Santa Cruz');
+insert into marca values(null,'B2BR');
+
+
+
+insert into artes_marciais values(null,'Boneco de Treinamento Kikos AB3933','Kicos','Equipamento',
+'am1.jpg','Preto',null,null,'Idealizado para que os treinos tornem-se dinâmicos e eficientes mesmo sem oponentes reais,
+ o Boneco de Treinamento Kikos AB3933 é a alternativa perfeita para simular combates corpo a corpo e o encaixe de golpes.',
+'2890,00');
+
+insert into artes_marciais values(null,'Aparador de Soco MKS Manopla','MKS','Equipamento','am2.jpg',
+'Vermelho',null,null,'Leve, prático e funcional, o Aparador de Soco MKS Manopla foi desenvolvido para quem pratica lutas
+ marciais e busca um equipamento que amorteça todos os golpes e auxilie na conquista de um desempenho perfeito. Muito
+ confortável, foi produzido em couro resistente e durável e traz revestimento em espuma rígida por todo interior, 
+garantindo total absorção dos impactos e proteção total contra os fortes impactos.','99,90');
+
+insert into artes_marciais values(null,'Punching Ball MKS Speed','MKS','Equipamento','am3.jpg','Preto',null,null,'Os 
+lutadores de plantão vão adorar toda a praticidade, funcionalidade e precisão do Punching Ball MKS Speed, teu novo 
+parceiro na prática esportiva. Fácil de ser usado, foi desenvolvido em couro natural, o que promove ao produto durabilidade 
+e extrema leveza, além de garantir uma fácil instalação.','99,90');
+
+insert into artes_marciais values(null,'Corda de Pular Adidas Nylon com Rolamento','Adidas','Equipamento','am4.jpg','Preto',null,null,'Produzida 
+para quem nao abre mao de treinos eficientes, a Corda de Pular Adidas Nylon com Rolamento foi desenvolvida em nylon super-resistente que promove 
+leveza e rigidez ao item, alem de ser compacta, podendo ser levada ate a academia.','69,90');
+
+insert into artes_marciais values(null,'Aparador de Chute Adidas Iraniano Curvo','Adidas','Equipamento','am5.jpg','Preto',
+null,null,'Para você aplicar diversos chutes e melhorar tua performance na prática esportiva, o Aparador de Chute Adidas 
+Iraniano Curvo é essencial nos teus treinos. Com estrutura compacta e rígida, foi desenvolvido em material resistente e 
+revestimento em espuma que absorve os fortes impactos e minimiza o desgaste do produto, conferindo durabilidade.','349,90');
+
+insert into artes_marciais values(null,'Teto Solo MKS','Adidas','Equipamento','am6.jpg','Preto',null,null,'Os lutadores de plantao vao adorar toda a 
+praticidade, funcionalidade e precisao do Teto Solo Adidas MKS, teu novo parceiro na pratica esportiva. Facil de ser usado, foi desenvolvido em 
+couro natural, o que promove ao produto durabilidade e extrema leveza, além de trazer elástico para uma facil instalação. Os mesmos são flexiveis e 
+super-resistentes, evitando o desgaste durante os treinos.','169,90');
+
+
+
+
+insert into aventura values(null,'Lanterna de Mão Recarregável 110 V','REKAR','Equipamento','a1.jpg','Preto','Amarelo','Azul','A lanterna possui 
+carregador 110V/12V ,  vem também com 1 lâmpada halógena de reserva.
+Apos cada recarga de 8 horas resulta em 10 horas de uso com os seus LED's
+ e 2 horas de uso constante com a lâmpada halógena. Os 12 LED's geram maior 
+economia e potência com uma luminosidade mais branca e estável.','169,00');
+
+insert into aventura values(null,'Cadeirinha para Verticais','MOMENTUM AL','Proteção','a2.jpg','Amarelo','Preto',null,'Combinação entre custo, benefício e ajustabilidade.
+Perneiras ajustáveis.
+4 carregadores de equipamentos.
+Haul loop traseiro.
+Material Fita estrutural de poliamida (nylon) Peso 410g','299,00');
+
+insert into aventura values(null,'Lampião a gás compacta','Cairo','Equipamento','a3.jpg','Preto','Azul',null,'Ideal para viagens 
+aonde praticidade e espaço são necessários','79,90');
+
+insert into aventura values(null,'Cantil para água em Alumínio','REKAR','Equipamento','a4.jpg','Verde',null,null,'Ideal para levar em bolsas 
+e mochilas em diversas situações de viagem e lazer aonde a hidratação é sempre necessária. Um produto leve e de fácil manuseio com um design 
+rústico típico campista. Acompanha a capinha de proteção camuflada que da um toque diferente e especial a peça.','39,90');
+
+insert into aventura values(null,'Mochila para Transporte de Crianças','Proteção','Adidas','a5.jpg','Roxo','Azul','Vermelho','Se você quer fazer uma caminhada, 
+mas não tem com quem deixar seu filho, resolvemos o problema. A linha Kid Comfort é composta por mochilas 
+para transporte de bebês que já sabem sentar e possuem até 22 kg. O assento possui altura ajustável e cinto de segurança de cinco pontos, 
+alças confortáveis, bolso fechado grande sob o assento, bolso traseiro para artigos de valor e um bolso lateral de tela.','249,90');
+
+
+
+
+insert into praia values(null,'Óculos Kayenne masculino','Aqua Sphere','Equipamento','p1.jpg','Preto','Azul',null,'A última tecnologia 
+em óculos de natação para águas abertas.
+O Kayenne abre o campo de visão, literalmente. Produzidas com tecnologia patenteada, as lentes curvas proporcionam um ângulo de 180 graus
+ de visibilidade, sem distorção. Com design slim ultra-moderno, mantém o óculos próximo ao rosto, proporcionando desempenho superior com 
+baixo arrasto. Fivela de ajuste rápido, que permite qualquer tipo de ajuste sem necessidade da retirada do óculos.','122,90');
+
+insert into praia values(null,'Prancha Emery The Shoe','Emery','Equipamento','p2.jpg','Branco',null,null,'Desenvolvida com os mais altos 
+padrões de qualidade, a Prancha Emery The Shoe garante maior agilidade no surfe e mantém suas linhas em ondas sólidas. É produzida com 
+material resistente e tem ótimo acabamento, garantindo durabilidade. Proporciona velocidade e obtém respostas rápidas do mar.','1577,00');
+
+insert into praia values(null,'Prancha Pumpkin Seeds - Jimbo Lane','Santa Cruz','Equipamento','p3.jpg','Branco',null,null,'Considerada o canivete 
+suíço do surf, a Prancha de Surf Santa Cruz - Pumpkin Seeds - Jimbo Lane possui design assinado por Doug Haut com hidrodinâmica semelhante a de 
+um peixe, que junto com sua cauda fina torna a prancha perfeita para surfar ondas pequenas ou encarar grandes tubos à alta velocidade. Seu nariz 
+largo e a concavidade relaxada deixam a prancha muito rápida e com grande aceleração.','1785,00');
+
+insert into praia values(null,'Prancha de Bodyboard Eder Luciano SUPER PRO','B2BR','Equipamento','p4.jpg','Verde','Azul','Branco','Eder Luciano
+ ficou conhecido como Ciclone Catarina por obter grandes resultados em competições internacionais e por sempre fazer pontuações expressivas 
+em suas baterias. Vice Campeão Europeu em 2005, sempre impressiona com seu desempenho.','595,00');
+
+
+
+
+
+
+insert into training values(null,'Camiseta TF Preparation SM','Adidas','Roupas','t1.jpg','Preto',null,null,'Há mais potência para ser descoberta. 
+A camiseta sem mangas masculina adidas Techfit Preparation impulsiona seus níveis de potência aumentando o conforto. A ventilação estratégia 
+CLIMACOOL® mantém você seco e refrescado','99,90');
+
+insert into training values(null,'Tenis 4.3','Adidas','Tenis','t2.jpg','Preto','Branco',null,'Exercite-se com o adidas 4.3 e sinta a diferença de 
+estar com um calçado clássico, discreto e prático, enquanto seus pés descansam e você fica na melhor forma.','199,90');
+
+insert into training values(null,'Jaqueta Warm Windbreaker','Adidas','Roupas','t3.jpg','Verde','Azul','Rosa','Confeccionada em tecido
+ estruturado para um caimento perfeito, a Jaqueta masculina Warm Windbreaker tem forro em tecido polar para proteção total mesmo nos 
+dias mais frios. Com modelagem moderna e as tradicionais três listras da adidas.','179,90');
+
+
+
+
+
+
+
+_____________________________________________________________________________________________________________
+
+insert into users values(null,'Fernando Edinei Voigt','123','admin','s');
+
+
+
+create table users(
+cod int AUTO_INCREMENT,
+nome varchar(50) NOT NULL,
+senha varchar(30) NOT NULL,
+username varchar(30) NOT NULL,
+permissao char(1) NOT NULL,
+PRIMARY KEY (cod)
+);

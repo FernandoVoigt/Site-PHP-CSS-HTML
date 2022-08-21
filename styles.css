@@ -1,0 +1,427 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	background:url(bg.png);
+	margin-bottom:0px;
+	overflow:auto;
+	}
+	
+* { margin: auto;
+	padding: 0;
+	border:0;
+	}	
+
+#site { 
+	margin: auto;
+	margin-bottom:0px;
+	padding: 0;
+	border:0;
+	width:990px;
+	height:inherit;
+	}
+
+#banner{
+	margin:auto;
+	width: 990px;
+	box-shadow: 0px 0px 5px 5px #000;
+	height:auto;
+	background: #1bad11;
+	}
+
+.conteudo {
+	background:url(azul-textura-papel-de-parede-fundo-texturas-foto-181184.jpg);
+	width: 900px;
+	padding: 20px;
+	border: 0;
+	box-shadow: 0px 0px 5px 5px #000;
+	border-radius: 10px 10px 10px 10px;
+	color:#FFF;
+	font-family: Tw Cen MT Condensed Extra Bold;
+	height: auto;
+	padding-top: 70px;
+	}
+	
+.conteudo4 a{
+	text-decoration:none;
+	color: #000;
+	}
+
+.conteudo4 a:hover{
+	text-decoration: underline;
+	}
+	
+.conteudo4{
+	background:url(azul-textura-papel-de-parede-fundo-texturas-foto-181184.jpg);
+	width: 900px;
+	padding: 20px;
+	border: 0;
+	box-shadow: 0px 0px 5px 5px #000;
+	border-radius: 10px 10px 10px 10px;
+	color:#FFF;
+	font-family: Tw Cen MT Condensed Extra Bold;
+	height: auto;
+	padding-top: 70px;
+	}	
+	
+.conteudohome {
+	background:url(azul-textura-papel-de-parede-fundo-texturas-foto-181184.jpg);
+	width: 900px;
+	padding: 20px;
+	border: 0;
+	box-shadow: 0px 0px 5px 5px #000;
+	border-radius: 10px 10px 10px 10px;
+	color:#FFF;
+	font-family: Tw Cen MT Condensed Extra Bold;
+	height: auto;
+	padding-top: 70px;
+	}
+	
+.rodape {
+	position:relative;
+	left: -7px;
+	bottom: 0px;
+	width: 980px;
+	background: #030;
+	height: 40px;;
+	box-shadow: 0px 0px 5px 5px #000;
+	text-align:center;
+	color:#FFFFFF;
+	padding: 10px;
+	margin: auto;
+	}	
+	
+#descricao {
+	position:relative;
+	top: 80px;
+	left: -225px;
+	width: 400px;
+	height: auto;
+	letter-spacing: 1px;
+	text-align:center;
+	}	
+	
+#animacao {
+	position: relative;
+	left: 230px;
+	top: -200px;
+	width: 400px;
+	height: 300px;
+	box-shadow: 0px 0px 5px 5px #000;
+	}
+
+input {
+	border:#060;
+	box-shadow: 0px 0px 2px 2px #030;
+	border-radius: 5px;
+	}
+	
+#sistema a{
+	text-decoration: none;
+	}	
+	
+.conteudo2 {
+	background:url(azul-textura-papel-de-parede-fundo-texturas-foto-181184.jpg);
+	width: 900px;
+	padding: 20px;
+	border: 0;
+	box-shadow: 0px 0px 5px 5px #000;
+	border-radius: 10px 10px 10px 10px;
+	height:auto;
+	padding-top: 70px;
+	color: #FFF;
+	font-family: Tahoma, Geneva, sans-serif;
+	}
+	
+.conteudo2 a{
+	text-decoration: none;
+	color:#000;
+	}	
+	
+.conteudo2 a:hover{
+	text-decoration: underline;
+	}		
+
+.conteudo a{
+	text-decoration: none;
+	color: #CCC;
+	}
+	
+.rodape2 {
+	position:relative;
+	left: -7px;
+	top: 600px;
+	bottom: 0;
+	width: 980px;
+	background: #030;
+	height: auto;
+	box-shadow: 0px 0px 5px 5px #000;
+	text-align:center;
+	color:#FFFFFF;
+	padding: 10px;
+	margin: auto;
+	}
+	
+.conteudo3 {
+	background:url(azul-textura-papel-de-parede-fundo-texturas-foto-181184.jpg);
+	width: 900px;
+	padding: 20px;
+	border: 0;
+	box-shadow: 0px 0px 5px 5px #000;
+	border-radius: 10px 10px 10px 10px;
+	color:#FFF;
+	font-family: Tw Cen MT Condensed Extra Bold;
+	height: 180px;
+	padding-top: 70px;
+	}	
+	
+	
+/**********************************************************************/
+
+
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:500);
+/* 2f4b87 */
+/* 2f4b87 */
+/* #1f325d */
+/* Menu CSS */
+#cssmenu {
+	position: relative;
+	top: -2;
+	background: #1bad11;
+	box-shadow: 0px -5px 5px 5px #000; 
+  width: 990px;
+  z-index: 2;
+  
+}
+#cssmenu,
+#cssmenu ul,
+#cssmenu ul li,
+#cssmenu ul li a {
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: #ffffff;
+  -webkit-transition: all ease .3s;
+  -o-transition: all ease .3s;
+  -moz-transition: all ease .3s;
+  -ms-transition: all ease .3s;
+  transition: all ease .3s;
+}
+#cssmenu:before,
+#cssmenu:after,
+#cssmenu > ul:before,
+#cssmenu > ul:after {
+  content: '';
+  display: table;
+}
+#cssmenu:after,
+#cssmenu > ul:after {
+  clear: both;
+}
+#cssmenu a {
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+#cssmenu ul {
+  background: #1bad11;
+  border-radius: 3px;
+  border: 1px solid #2b4479;
+  border: 1px solid #147f0c;
+  -webkit-box-shadow: 0 1px 2px rgba(2, 2, 2, 0.25), inset 0 1px 1px rgba(255, 255, 255, 0.15);
+  -o-box-shadow: 0 1px 2px rgba(2, 2, 2, 0.25), inset 0 1px 1px rgba(255, 255, 255, 0.15);
+  -moz-box-shadow: 0 1px 2px rgba(2, 2, 2, 0.25), inset 0 1px 1px rgba(255, 255, 255, 0.15);
+  -ms-box-shadow: 0 1px 2px rgba(2, 2, 2, 0.25), inset 0 1px 1px rgba(255, 255, 255, 0.15);
+  box-shadow: 0 1px 2px rgba(2, 2, 2, 0.25), inset 0 1px 1px rgba(255, 255, 255, 0.15);
+}
+#cssmenu ul > li {
+  float: left;
+  list-style: none;
+}
+#cssmenu ul > li > a {
+  display: block;
+  text-decoration: none;
+  padding: 15px 44px;
+  position: relative;
+}
+#cssmenu ul > li > a:hover {
+  background: #147f0c;
+  -webkit-box-shadow: inset 0 0 1px #0d5008;
+  -o-box-shadow: inset 0 0 1px #0d5008;
+  -moz-box-shadow: inset 0 0 1px #0d5008;
+  -ms-box-shadow: inset 0 0 1px #0d5008;
+  box-shadow: inset 0 0 1px #0d5008;
+  -webkit-transition: all ease .3s;
+  -o-transition: all ease .3s;
+  -moz-transition: all ease .3s;
+  -ms-transition: all ease .3s;
+  transition: all ease .3s;
+}
+#cssmenu ul > li > a:hover:before {
+  content: '';
+  z-index: 2;
+  position: absolute;
+  border: 1px solid white;
+  border-top: 0;
+  border-bottom: 0;
+  border-right: 0;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: -1px;
+  opacity: .2;
+}
+#cssmenu ul > li > a:hover:after {
+  content: '';
+  z-index: 2;
+  position: absolute;
+  border: 1px solid white;
+  border-top: 0;
+  border-bottom: 0;
+  border-left: 0;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: -1px;
+  opacity: .2;
+}
+#cssmenu > ul > li > ul {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+}
+#cssmenu > ul > li:hover > ul {
+  opacity: 1;
+  visibility: visible;
+  position: absolute;
+  border-radius: 0 0 3px 3px;
+  -webkit-box-shadow: none;
+  -o-box-shadow: none;
+  -moz-box-shadow: none;
+  -ms-box-shadow: none;
+  box-shadow: none;
+}
+#cssmenu > ul > li > ul {
+  width: 200px;
+  position: absolute;
+}
+#cssmenu > ul > li > ul > li {
+  float: none;
+  position: relative;
+}
+#cssmenu > ul > li > ul > li > ul {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+}
+#cssmenu > ul > li > ul > li:hover > ul {
+  opacity: 1;
+  visibility: visible;
+  position: absolute;
+}
+#cssmenu > ul > li > ul > li > ul {
+  left: 200px;
+  top: 1px;
+  width: 200px;
+}
+#cssmenu > ul > li > ul > li > ul > li {
+  float: none;
+}	
+
+
+/***********************************************************************************************************/
+
+#cssmenu2 {
+	position: relative;
+	top: 5px;
+	box-shadow: 0px 0px 5px 5px #000;
+  border: none;
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+  font: 67.5% 'Lucida Sans Unicode', 'Bitstream Vera Sans', 'Trebuchet Unicode MS', 'Lucida Grande', Verdana, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  width: 990px; 
+}
+#cssmenu2 ul {
+  background: #333333;
+  height: 35px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#cssmenu2 li {
+  float: left;
+  padding: 0px;
+}
+#cssmenu2 li a {
+  background: #333333 url('seperator.png') bottom right no-repeat;
+  display: block;
+  font-weight: normal;
+  line-height: 35px;
+  margin: 0px;
+  padding: 0px 25px;
+  text-align: center;
+  text-decoration: none;
+}
+#cssmenu2 > ul > li > a {
+  color: #cccccc;
+}
+#cssmenu2 ul ul a {
+  color: #cccccc;
+}
+#cssmenu2 li > a:hover,
+#cssmenu2 ul li:hover > a {
+  background: #108e07 url('hover.png') bottom center no-repeat;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+#cssmenu2 li ul {
+  background: #333333;
+  display: none;
+  height: auto;
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+  position: absolute;
+  width: 225px;
+  z-index: 200;
+  /*top:1em;
+	/*left:0;*/
+
+}
+#cssmenu2 li:hover ul {
+  display: block;
+}
+#cssmenu2 li li {
+  background: url('sub_sep.png') bottom left no-repeat;
+  display: block;
+  float: none;
+  margin: 0px;
+  padding: 0px;
+  width: 225px;
+}
+#cssmenu2 li:hover li a {
+  background: none;
+}
+#cssmenu2 li ul a {
+  display: block;
+  height: 35px;
+  font-size: 12px;
+  font-style: normal;
+  margin: 0px;
+  padding: 0px 10px 0px 15px;
+  text-align: left;
+}
+#cssmenu2 li ul a:hover,
+#cssmenu2 li ul li:hover > a {
+  background: #108e07 url('hover_sub.png') center left no-repeat;
+  border: 0px;
+  color: #ffffff;
+  text-decoration: none;
+}
+#cssmenu2 p {
+  clear: left;
+}
